@@ -1,0 +1,123 @@
+#container {
+    display: grid;
+    place-items: flex-start;
+    /*place-items: center*/
+}
+
+#slider-container {
+    max-width: 1170px;
+    position: relative;
+    overflow: hidden;
+    /*padding: 50px;*/
+}
+
+#container2 {
+    display: grid;
+    place-items: flex-start;
+    /*place-items: center*/
+}
+
+#slider-container2 {
+    max-width: 1170px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.slide {
+    /*margin-right: 20px;*/
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    /*position: absolute;*/
+    /*top: 40%;*/
+    padding-top: 20px;
+    /*color: #52503B;*/
+
+}
+
+.slider-btn, .popular-slider-btn {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    /*border: 2px solid #52503B;*/
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 80%;
+    color: #FFFFFF;
+    background-color: #3793D8;
+}
+
+.slider-btn-right {
+    /*margin-right: -20px;*/
+}
+
+.slider-btn-left {
+    /*margin-left: -30px*/
+}
+
+#slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container2 #slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container #slider .slide {
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container2 #slider2 .popular-slide {
+    margin: auto 10px;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container #slider .slide:nth-child(1) {
+    /*margin-left: 0;*/
+}
+
+/*@media (max-width: 1200px) {*/
+/*    #slider-container{*/
+/*        max-width: 870px;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    !*#slider{*!*/
+/*    !*    max-width: 870px;*!*/
+/*    !*}*!*/
+/*}*/
+
+
+@media only screen and (max-width: 420px) {
+    #slider-container #slider .slide {
+        margin: auto 20px auto 0;
+    }
+
+    #slider-container2 #slider2 .slide {
+        margin: auto 20px auto 0;
+    }
+
+    #slider-container2 {
+        padding-left: 0;
+    }
+}

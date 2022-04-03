@@ -1,0 +1,163 @@
+/* zeroing */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;;
+    font-weight: 400;
+    /*font-size: 14px;*/
+    /*line-height: 1.5;*/
+    -webkit-font-smoothing: antialiased;
+}
+
+/*6. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles */
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* zeroing end */
+
+/*.base-container {*/
+/*    max-width: 1210px;*/
+/*    margin: 0 auto; !* will center this container *!*/
+/*    padding: 0 20px; !* To secure layout/container for small screen size *!*/
+/*}*/
+
+/*.row {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+/*.column {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+#open-hamburger-menu-icon {
+    display: none;
+}
+
+#close-hamburger-menu-icon {
+    display: none;
+}
+
+/*************************************End Zeroing *********************************************************************/
+
+
+
+/*************************************Make our header/menu responsive**************************************************/
+@media (max-width: 1075px) {
+    .header-container {
+        position: relative;
+        justify-content: center;
+        padding: 80px 0 0;
+    }
+
+    .logo-container{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    .mnu-list {
+        display: none;
+    }
+
+    #open-hamburger-menu-icon {
+        font-size: 30px;
+        display: inherit;
+    }
+
+    #close-hamburger-menu-icon {
+        font-size: 30px;
+    }
+
+    .responsive .mnu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .responsive .mnu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .responsive .mnu-item a {
+        padding: 15px 0;
+        font-size: 20px;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 450px) {
+    /*in this case logo is text*/
+    .logo-container{
+        font-size: 30px;
+    }
+
+    .icon {
+        /*position: absolute;*/
+        top: 20px;
+        right: 20px;
+    }
+
+    .responsive .mnu-list {
+        padding: 20px 0 10px 0;
+    }
+
+    .responsive .mnu-item a {
+        font-size: 17px;
+    }
+}
+
+/*********************************************End setup for header menu************************************************/
