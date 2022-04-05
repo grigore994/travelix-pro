@@ -648,6 +648,181 @@ button.small-btn {
 
 }
 
+.touch {
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+
+.touch-text-container {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.touch .section-title {
+    padding-top: 10px;
+}
+
+.touch .section-subtitle {
+    padding: 20px 0 77px 0;
+    max-width: 865px;
+}
+
+.touch-left-container {
+    flex: 0 1 50%;
+}
+
+.touch-form {
+    padding: 50px 66px;
+    opacity: 0.8;
+    border-radius: 24px;
+    background-color: #F7F7F8;
+}
+
+.touch-form-input {
+    padding: 20px 0;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #CACACA;
+    border-bottom: 1px solid #CACACA;
+    background-color: #F7F7F8;
+}
+
+.touch-right-container {
+    flex: 0 1 50%;
+}
+
+.img-container img {
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 55px 0 25px 0;
+    background-image: url("/images/footer-img.png");
+}
+
+.footer-text-container {
+    max-width: 770px;
+    padding-bottom: 85px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .section-title {
+    color: #FFFFFF;
+}
+
+.footer .section-subtitle {
+    color: #FFFFFF;
+    padding: 25px 0 35px 0;
+}
+
+
+.footer-form {
+    position: relative;
+}
+
+.footer-form-input {
+    width: 100%;
+    padding: 28px 43px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #CACACA;
+    background-color: #FFFBFA;
+}
+
+.footer-form .submit-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: #0600AE;
+}
+
+.map-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.map-section {
+    padding: 20px 20px;
+}
+
+.map-section-title {
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.map-section-entry {
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.map-section:first-child .map-section-title {
+    padding-bottom: 9px;
+    max-width: 300px;
+    font-size: 36px;
+}
+
+.map-section:first-child .map-section-entry {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 162%;
+}
+
+.map-section:last-child .map-section-entry {
+    font-size: 17px;
+}
+
+.footer-text {
+    padding-left: 17px;
+}
+
+.footer-text:last-child {
+    padding-bottom: 10px;
+}
+
+.social-row {
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #0600AE;
+    background-color: #FFFFFF;
+}
+
+.social i {
+    font-size: 21px;
+}
+
+.hr-line {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #FFFFFF;
+}
+
+.copyright {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
 
 @media (max-width: 1200px) {
     .entire-img {
@@ -686,6 +861,14 @@ button.small-btn {
     .booking-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .touch-form {
+        padding: 33px 33px;
+    }
+
+    .touch-form-input {
+        margin-bottom: 40px;
     }
 }
 
@@ -746,6 +929,22 @@ button.small-btn {
         max-width: 65px;
         margin-right: 20px;
     }
+
+    .touch {
+        padding-top: 0;
+    }
+
+    .touch-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .touch-right-container {
+        padding-bottom: 30px;
+    }
+
+    .footer-form .submit-btn {
+        padding: 12px 15px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -781,6 +980,12 @@ button.small-btn {
     }
 }
 
+@media (max-width: 500px) {
+    .footer-form-input {
+        padding: 28px 20px;
+    }
+}
+
 @media (max-width: 450px) {
     .popular-card {
         max-width: 280px;
@@ -813,6 +1018,17 @@ button.small-btn {
         width: 50px;
         height: 50px;
     }
+
+    .footer-form-input {
+        padding: 17px 20px;
+        border-radius: 8px;
+    }
+
+    .footer-form .submit-btn {
+        position: inherit;
+        width: 100%;
+        right: 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -836,6 +1052,10 @@ button.small-btn {
         font-size: 15px;
         line-height: 120%;
     }
+
+    .touch .section-subtitle {
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -850,6 +1070,20 @@ button.small-btn {
 
     .benefits-container {
         flex-direction: column;
+    }
+
+    .touch {
+        padding-bottom: 50px;
+    }
+
+    .touch-form {
+        padding: 20px 20px;
+    }
+
+    .touch-form-input {
+        padding: 15px 0;
+        margin-bottom: 30px;
+        font-size: 14px;
     }
 }
 
