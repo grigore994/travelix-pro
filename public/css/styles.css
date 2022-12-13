@@ -698,7 +698,7 @@ button.small-btn {
 .footer {
     padding:0 0 25px 0;
     /*background-image: url("/public/images/footer-img.png");*/
-    background-image: url("footer-img.png");
+    background-image: url("./footer-img.png");
 
 }
 .background-container{
